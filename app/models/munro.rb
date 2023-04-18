@@ -1,0 +1,2 @@
+class Munro < ApplicationRecord
+end
