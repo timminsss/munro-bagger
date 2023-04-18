@@ -7,7 +7,8 @@ function Munros(props) {
       {props.munros.map((munro) => {
         return <div key={munro.id}>
           <h2>{munro.name} - {munro.region}</h2>
-          <p>{munro.height}m</p>
+          <p>{munro.altitude}m</p>
+          <p>{munro.duration}</p>
         </div>
       })}
     </div>

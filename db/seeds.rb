@@ -14,8 +14,13 @@ csv = CSV.parse(csv_test, :headers => true, :encoding => 'ISO-8859-1')
 csv.each do |row|
   t = Munro.new
   t.name = row['Name']
-  t.description = row['Description']
-  t.height = row['Height']
   t.region = row['Region']
+  t.altitude = row['Altitude']
+  t.difficulty = row['Difficulty']
+  t.bog = row['Bog Factor']
+  t.distance = row['Distance']
+  t.duration = row['Duration']
+  t.latitude = row['Latitude']
+  t.longitude = row['Longitude']
   t.save
 end

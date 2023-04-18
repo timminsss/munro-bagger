@@ -1,0 +1,13 @@
+.map-container {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 50vh;
+}
+
+.map-nav {
+  position: 'absolute';
+  right: 10;
+  top: 10;
+}

@@ -10,14 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_11_054727) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_18_043157) do
   create_table "munros", force: :cascade do |t|
     t.string "name"
-    t.string "description"
-    t.integer "height"
     t.string "region"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "altitude"
+    t.integer "difficulty"
+    t.integer "bog"
+    t.integer "distance"
+    t.string "duration"
+    t.float "latitude"
+    t.float "longitude"
   end
 
 end
