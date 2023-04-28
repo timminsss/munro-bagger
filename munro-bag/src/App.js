@@ -1,6 +1,8 @@
 import './App.css'
 import axios from 'axios';
-import MunroData from './components/MunroData.js';
+import Form from './components/Form'
+import Header from './components/Header'
+import MunroData from './components/MunroData';
 import MapboxMap from './components/MapboxMap';
 import { useEffect, useState } from 'react';
 
@@ -24,7 +26,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App container">
+    <div className="w-full">
+      <Header/>
+      <Form/>
       <MapboxMap munros={munros}/>
       <MunroData munros={munros}></MunroData>
     </div>

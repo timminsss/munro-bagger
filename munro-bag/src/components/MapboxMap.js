@@ -40,7 +40,7 @@ function MyMapboxMap(props) {
         offset: 25,
       }).setHTML(
         `<div>
-          <h1>${munro.name}</h1>
+          <h1 className="text-lg">${munro.name}</h1>
           <p>${munro.altitude}m</p>
           <p>${munro.region}</p>
         </div>`
