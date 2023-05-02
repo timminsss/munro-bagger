@@ -6,7 +6,7 @@ import MunroData from './components/MunroData';
 import MapboxMap from './components/MapboxMap';
 import { useEffect, useState } from 'react';
 
-const API_URL = "http://localhost:3000/munros";
+const API_URL = "http://localhost:3000/api/v1/munros";
 
 function getAPIData() {
   return axios.get(API_URL).then((response) => response.data)
@@ -17,9 +17,9 @@ function App() {
 
   useEffect(() => {
     let mounted = true;
-    getAPIData().then((items) => {
+    getAPIData().then((data) => {
       if (mounted) {
-        setMunros(items);
+        setMunros(data);
       }
     })
     return () => (mounted = false);

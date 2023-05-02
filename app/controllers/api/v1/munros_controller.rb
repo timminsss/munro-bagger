@@ -1,5 +1,5 @@
-# class Api::V1::MunrosController < ApplicationController
-class MunrosController < ApplicationController
+class Api::V1::MunrosController < ApplicationController
+# class MunrosController < ApplicationController
   before_action :set_munro, only: %i[ show update destroy ]
 
   # GET /munros
