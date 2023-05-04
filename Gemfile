@@ -49,3 +49,5 @@ end
 gem 'rack-cors'
 
 gem "geocoder"
+
+gem "devise", "~> 4.9"

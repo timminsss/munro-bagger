@@ -24,3 +24,5 @@ csv.each do |row|
   t.longitude = row['Longitude']
   t.save
 end
+
+User.first_or_create(email: "admin@admin.com", password: "password", password_confirmation: "password", role: "admin")
